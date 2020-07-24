@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+  <title>Noata - Home</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/icon1.png"/>
+  <link href="index.css" type ="text/css" rel="stylesheet"/>
+  <link href="style.css" type ="text/css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="index.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+    <body>
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+            }
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            }
+        </script>
+        <div id="navbar">
+            <img src="images/note.png" alt="Logo" height="40" width="25"style="vertical-align: middle;"/>
+            <a href="#contact">Contact</a>
+            <a href="#news">Download</a>
+            <a href="index.html">Home</a>
+
+
+        </div>
+        <div class="home-title ">
+            <h1 class = col-sm-3>
+                FIller
+            </h1>
+            <img src="images/note.png" style="float: right;"alt="Logo" height="300" width="200"style="vertical-align: middle;"/>
+        </div>
+
+        <div class="home-main col-sm-9">
+            <h3 id="about"> About the Project</h3>
+            <p>
+            Utilizing the data from MIDI files, this program can use big data analysis to collect all commonalities between pieces of music, recordings, and more! The device will also be able to accurately recognize the composer of a piece if the information is given and that same data will be compiled and presented to the user. 
+            </p>
+            <p>
+            Data like this can be utilized to help composers and song writers to create pieces of music that contains motifs and lyrical rythms from their favorite musicians. 
+            </p>
+        </div>
+
+
+        <footer style="margin-top: 50vh; "class=" col-sm-9" >
+            <span style="vertical-align: middle;"> Made with <img  src="images/heart.png" alt="Heart" height="20" width="20"style="vertical-align: middle;"/> by Hae Chan.</span>
+        </footer>
+    </body>
+</html>
